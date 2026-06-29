@@ -1,0 +1,19 @@
+backend:
+  name: github
+  repo: btcpeso/SimpleFoods-website # Palitan mo 'to (e.g., btcpeso/simplefoods)
+  branch: main
+
+media_folder: "images" # Dito automatic ise-save ni Decap ang mga in-upload na pictures ng ulam
+public_folder: "/images"
+
+collections:
+  - name: "menu"
+    label: "Menu Items"
+    folder: "data/menu" # Dito niya isusulat ang .json o .md files ng mga bagong ulam
+    create: true # Payagan si client na magdagdag ng ulam
+    slug: "{{slug}}"
+    fields:
+      - { label: "Ulam Name", name: "title", widget: "string" }
+      - { label: "Price (PHP)", name: "price", widget: "number", value_type: "int" }
+      - { label: "Ulam Picture", name: "image", widget: "image" }
+      - { label: "Description", name: "body", widget: "markdown", required: false }
