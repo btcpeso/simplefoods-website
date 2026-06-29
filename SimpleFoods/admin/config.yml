@@ -1,5 +1,5 @@
 backend:
-  name: github
+  name: git-gateway
   repo: btcpeso/SimpleFoods-website # Palitan mo 'to (e.g., btcpeso/simplefoods)
   branch: main
 
