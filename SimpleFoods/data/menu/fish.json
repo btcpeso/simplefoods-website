@@ -1,0 +1,9 @@
+{
+  "price": "899 PHP",
+  "items": [
+    { "name": "Lemon Herb Fish Fillet", "bestseller": true },
+    { "name": "Fish Fillet w/ Tartar Sauce", "bestseller": true },
+    { "name": "Sweet and Sour Fish", "bestseller": false },
+    { "name": "Buttered Shrimp – 1,249/Tray", "bestseller": false }
+  ]
+}

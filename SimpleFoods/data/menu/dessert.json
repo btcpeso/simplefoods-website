@@ -1,0 +1,7 @@
+{
+  "price": "699 PHP",
+  "items": [
+    { "name": "Mango Tapioca", "bestseller": true },
+    { "name": "Coffee Jelly", "bestseller": false }
+  ]
+}

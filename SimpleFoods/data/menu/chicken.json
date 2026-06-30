@@ -1,0 +1,12 @@
+{
+  "price": "999 PHP",
+  "items": [
+    { "name": "Chicken Cordon Bleu", "bestseller": true },
+    { "name": "Chicken Teriyaki", "bestseller": true },
+    { "name": "Buffalo Wings", "bestseller": true },
+    { "name": "Chicken Afritada", "bestseller": false },
+    { "name": "Chicken Pastel", "bestseller": false },
+    { "name": "Buttered Chicken", "bestseller": false },
+    { "name": "Fried Chicken w/ Gravy", "bestseller": false }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "price": "799 PHP",
+  "items": [
+    { "name": "Tofu Sisig", "bestseller": true },
+    { "name": "Spicy Bagnet Laing", "bestseller": true },
+    { "name": "Chapsuey Special", "bestseller": false },
+    { "name": "Sipo Egg", "bestseller": false }
+  ]
+}

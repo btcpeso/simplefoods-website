@@ -1,8 +1,13 @@
 {
   "price": "999 PHP",
   "items": [
-    { "name": "Kare Kare Bagnet Lokal Test", "bestseller": true },
-    { "name": "Pork Spareribs Lokal Test", "bestseller": true },
-    { "name": "Honey Garlic Pork Lokal Test", "bestseller": false }
+    { "name": "Kare Kare Bagnet", "bestseller": true },
+    { "name": "Pork Spareribs Caldereta", "bestseller": true },
+    { "name": "Pork and Mushroom", "bestseller": true },
+    { "name": "Honey Garlic Pork", "bestseller": false },
+    { "name": "Pork Menudo", "bestseller": false },
+    { "name": "Crispy Liempo Dinakdakan", "bestseller": false },
+    { "name": "Crispy Liempo Sisig", "bestseller": false },
+    { "name": "Lumpia Shanghai 799 (90–100 pcs)", "bestseller": false }
   ]
 }
