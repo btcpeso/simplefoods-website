@@ -192,7 +192,7 @@
     {
       "title": "All Day Silog",
       "extra": "",
-      "isUpgrade": true,
+      "isUpgrade": false,
       "items": [
         {
           "name": "Hungarian Silog",
@@ -219,7 +219,7 @@
     {
       "title": "Special Upgrades",
       "extra": "",
-      "isUpgrade": true,
+      "isUpgrade": false,
       "items": [
         {
           "name": "Extra Steamed Rice — 20 PHP",
