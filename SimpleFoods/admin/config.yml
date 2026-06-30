@@ -3,6 +3,10 @@ backend:
   repo: btcpeso/SimpleFoods-website # Palitan mo 'to (e.g., btcpeso/simplefoods)
   branch: main
 
+# 👇 IDAGDAG ITONG DALAWANG LINYA SA IBABA:
+#local_backend: 
+# url: "http://localhost:8081/api/v1"
+
 media_folder: "SimpleFoods/images" # Dito automatic ise-save ni Decap ang mga in-upload na pictures ng ulam
 public_folder: "/images"
 
@@ -128,7 +132,11 @@ collections:
               - { label: "Package Name", name: "name", widget: "string" }
               - { label: "Price Label", name: "price", widget: "string" }
               - { label: "Is Best Seller?", name: "bestseller", widget: "boolean", default: false }
-              - { label: "Inclusions (Line by line)", name: "inclusions", widget: "list", field: { widget: "string" } }
+              - label: "Inclusions (Line by line)"
+                name: "inclusions"
+                widget: "list"
+                fields:
+                  - { label: "Item Description", name: "item", widget: "string" }
 
       # --- CREW SIDES & ENTREES ---
       - file: "SimpleFoods/data/menu/crew_sides.json"
