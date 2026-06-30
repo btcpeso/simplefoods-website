@@ -3,17 +3,115 @@ backend:
   repo: btcpeso/SimpleFoods-website # Palitan mo 'to (e.g., btcpeso/simplefoods)
   branch: main
 
-media_folder: "images" # Dito automatic ise-save ni Decap ang mga in-upload na pictures ng ulam
+media_folder: "SimpleFoods/images" # Dito automatic ise-save ni Decap ang mga in-upload na pictures ng ulam
 public_folder: "/images"
 
 collections:
-  - name: "menu"
-    label: "Menu Items"
-    folder: "data/menu" # Dito niya isusulat ang .json o .md files ng mga bagong ulam
-    create: true # Payagan si client na magdagdag ng ulam
-    slug: "{{slug}}"
-    fields:
-      - { label: "Ulam Name", name: "title", widget: "string" }
-      - { label: "Price (PHP)", name: "price", widget: "number", value_type: "int" }
-      - { label: "Ulam Picture", name: "image", widget: "image" }
-      - { label: "Description", name: "body", widget: "markdown", required: false }
+  - name: "party_trays"
+    label: "Party Food Trays"
+    delete: false
+    format: "json"
+    files:
+      # --- PORK ---
+      - file: "SimpleFoods/data/menu/pork.json"
+        label: "Pork Category"
+        name: "pork"
+        fields:
+          - { label: "Category Price", name: "price", widget: "string" }
+          - label: "Dishes List"
+            name: "items"
+            widget: "list"
+            fields:
+              - { label: "Dish Name", name: "name", widget: "string" }
+              - { label: "Is Best Seller? (***)", name: "bestseller", widget: "boolean", default: false }
+
+      # --- BEEF ---
+      - file: "SimpleFoods/data/menu/beef.json"
+        label: "Beef Category"
+        name: "beef"
+        fields:
+          - { label: "Category Price", name: "price", widget: "string" }
+          - label: "Dishes List"
+            name: "items"
+            widget: "list"
+            fields:
+              - { label: "Dish Name", name: "name", widget: "string" }
+              - { label: "Is Best Seller? (***)", name: "bestseller", widget: "boolean", default: false }
+
+      # --- CHICKEN ---
+      - file: "SimpleFoods/data/menu/chicken.json"
+        label: "Chicken Category"
+        name: "chicken"
+        fields:
+          - { label: "Category Price", name: "price", widget: "string" }
+          - label: "Dishes List"
+            name: "items"
+            widget: "list"
+            fields:
+              - { label: "Dish Name", name: "name", widget: "string" }
+              - { label: "Is Best Seller? (***)", name: "bestseller", widget: "boolean", default: false }
+
+      # --- VEGETABLES ---
+      - file: "SimpleFoods/data/menu/vegetables.json"
+        label: "Vegetables Category"
+        name: "vegetables"
+        fields:
+          - { label: "Category Price", name: "price", widget: "string" }
+          - label: "Dishes List"
+            name: "items"
+            widget: "list"
+            fields:
+              - { label: "Dish Name", name: "name", widget: "string" }
+              - { label: "Is Best Seller? (***)", name: "bestseller", widget: "boolean", default: false }
+
+      # --- FISH ---
+      - file: "SimpleFoods/data/menu/fish.json"
+        label: "Fish Category"
+        name: "fish"
+        fields:
+          - { label: "Category Price", name: "price", widget: "string" }
+          - label: "Dishes List"
+            name: "items"
+            widget: "list"
+            fields:
+              - { label: "Dish Name", name: "name", widget: "string" }
+              - { label: "Is Best Seller? (***)", name: "bestseller", widget: "boolean", default: false }
+
+      # --- PASTA ---
+      - file: "SimpleFoods/data/menu/pasta.json"
+        label: "Pasta Category"
+        name: "pasta"
+        fields:
+          - { label: "Category Price", name: "price", widget: "string" }
+          - label: "Dishes List"
+            name: "items"
+            widget: "list"
+            fields:
+              - { label: "Dish Name", name: "name", widget: "string" }
+              - { label: "Is Best Seller? (***)", name: "bestseller", widget: "boolean", default: false }
+
+      # --- NOODLES ---
+      - file: "SimpleFoods/data/menu/noodles.json"
+        label: "Noodles Category"
+        name: "noodles"
+        fields:
+          - { label: "Category Price", name: "price", widget: "string" }
+          - label: "Dishes List"
+            name: "items"
+            widget: "list"
+            fields:
+              - { label: "Dish Name", name: "name", widget: "string" }
+              - { label: "Is Best Seller? (***)", name: "bestseller", widget: "boolean", default: false }
+
+      # --- DESSERT ---
+      - file: "SimpleFoods/data/menu/dessert.json"
+        label: "Dessert Category"
+        name: "dessert"
+        fields:
+          - { label: "Category Price", name: "price", widget: "string" }
+          - label: "Dishes List"
+            name: "items"
+            widget: "list"
+            fields:
+              - { label: "Dish Name", name: "name", widget: "string" }
+              - { label: "Is Best Seller? (***)", name: "bestseller", widget: "boolean", default: false }

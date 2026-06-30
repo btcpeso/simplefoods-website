@@ -1,0 +1,10 @@
+{
+  "price": "1,099 PHP",
+  "items": [
+    { "name": "Roast Beef", "bestseller": true },
+    { "name": "Beef and Mushroom", "bestseller": true },
+    { "name": "Beef Broccoli", "bestseller": true },
+    { "name": "Beef Salpicao", "bestseller": false },
+    { "name": "Beef Sirloin Caldereta", "bestseller": false }
+  ]
+}

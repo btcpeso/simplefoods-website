@@ -1,0 +1,8 @@
+{
+  "price": "999 PHP",
+  "items": [
+    { "name": "Kare Kare Bagnet Lokal Test", "bestseller": true },
+    { "name": "Pork Spareribs Lokal Test", "bestseller": true },
+    { "name": "Honey Garlic Pork Lokal Test", "bestseller": false }
+  ]
+}

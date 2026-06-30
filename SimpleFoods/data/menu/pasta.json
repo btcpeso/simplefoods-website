@@ -1,0 +1,10 @@
+{
+  "price": "799 PHP",
+  "items": [
+    { "name": "Beef Lasagna (899/Tray)", "bestseller": true },
+    { "name": "Bacon Carbonara", "bestseller": true },
+    { "name": "Spaghetti Bolognese", "bestseller": false },
+    { "name": "Beef Baked Macaroni", "bestseller": false },
+    { "name": "Chicken Alfredo Fettuccine", "bestseller": false }
+  ]
+}

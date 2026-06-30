@@ -45,20 +45,20 @@
         #mobile-menu { display: none; }
         #mobile-menu.open { display: block; }
         .image-slider {
-        display: flex;
-        width: 700%;
-        height: 100%;
-        animation: loopSevenSlider 28s infinite ease-in-out;
+            display: flex;
+            width: 700%;
+            height: 100%;
+            animation: loopSevenSlider 28s infinite ease-in-out;
         }
         @keyframes loopSevenSlider {
-        0%, 11%   { transform: translateX(0); }
-        14%, 25%  { transform: translateX(-14.285%); }
-         28%, 39%  { transform: translateX(-28.57%); }
-         42%, 53%  { transform: translateX(-42.855%); }
-         56%, 67%  { transform: translateX(-57.14%); }
-         70%, 81%  { transform: translateX(-71.425%); }
-        84%, 95%  { transform: translateX(-85.71%); }
-         100%      { transform: translateX(0); }
+            0%, 11%   { transform: translateX(0); }
+            14%, 25%  { transform: translateX(-14.285%); }
+            28%, 39%  { transform: translateX(-28.57%); }
+            42%, 53%  { transform: translateX(-42.855%); }
+            56%, 67%  { transform: translateX(-57.14%); }
+            70%, 81%  { transform: translateX(-71.425%); }
+            84%, 95%  { transform: translateX(-85.71%); }
+            100%      { transform: translateX(0); }
         }
     </style>
 </head>
@@ -69,8 +69,10 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between h-20 items-center">
             <!-- Logo -->
-            
-                
+            <div class="flex items-center gap-2">
+                <img src="sfhd.png" alt="SimpleFoods" class="h-10 w-10 object-contain">
+                <span class="font-extrabold text-lg tracking-wide">SIMPLE<span class="text-brand-yellow">FOODS</span></span>
+            </div>
             
             <!-- Desktop Menu -->
             <div class="hidden lg:flex space-x-7 items-center text-[0.78rem] font-semibold tracking-wide">
@@ -114,7 +116,8 @@
     <div class="w-full md:w-[55%] flex items-center z-10 px-6 sm:px-12 lg:px-20 py-12 md:py-0">
         <div class="max-w-xl">
             <div class="hero-logo-container mb-6 block clear-both">
-            <img src="sfhd.png" alt="SimpleFoods Logo" style="width: 100%; max-width: 450px; height: auto; object-fit: contain; display: block;" class="md:mx-0">
+                <img src="sfhd.png" alt="SimpleFoods Logo" style="width: 100%; max-width: 450px; height: auto; object-fit: contain; display: block;" class="md:mx-0">
+            </div>
             <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-3 tracking-tight uppercase">
                 Party Food Trays<br>&amp; Crew Meals
             </h1>
@@ -147,33 +150,31 @@
                 VIEW PACKAGES
                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
             </a>
-            </div>
         </div>
     </div>
     <!-- Right Image -->
     <div class="w-full md:w-[55%] relative md:absolute md:right-0 md:top-0 md:bottom-0 h-[350px] md:h-full" style="overflow: hidden;">
-    <div class="w-full h-full hero-image-clip relative" style="overflow: hidden;">
-        
-        <div class="image-slider" style="display: flex; width: 700%; height: 100%;">
-            <img src="sf0.jpg" alt="Party Food Trays" style="width: 14.285%; height: 100%; object-fit: cover; flex-shrink: 0;">
-            <img src="sf1.jpg" alt="Party Food Trays" style="width: 14.285%; height: 100%; object-fit: cover; flex-shrink: 0;">
-            <img src="sf2.jpg" alt="Party Food Trays" style="width: 14.285%; height: 100%; object-fit: cover; flex-shrink: 0;">
-            <img src="sf3.jpg" alt="Party Food Trays" style="width: 14.285%; height: 100%; object-fit: cover; flex-shrink: 0;">
-            <img src="sf4.jpg" alt="Party Food Trays" style="width: 14.285%; height: 100%; object-fit: cover; flex-shrink: 0;">
-            <img src="sf5.jpg" alt="Party Food Trays" style="width: 14.285%; height: 100%; object-fit: cover; flex-shrink: 0;">
-            <img src="sf6.jpg" alt="Party Food Trays" style="width: 14.285%; height: 100%; object-fit: cover; flex-shrink: 0;">
-        </div>
+        <div class="w-full h-full hero-image-clip relative" style="overflow: hidden;">
+            <div class="image-slider" style="display: flex; width: 700%; height: 100%;">
+                <img src="sf0.jpg" alt="Party Food Trays" style="width: 14.285%; height: 100%; object-fit: cover; flex-shrink: 0;">
+                <img src="sf1.jpg" alt="Party Food Trays" style="width: 14.285%; height: 100%; object-fit: cover; flex-shrink: 0;">
+                <img src="sf2.jpg" alt="Party Food Trays" style="width: 14.285%; height: 100%; object-fit: cover; flex-shrink: 0;">
+                <img src="sf3.jpg" alt="Party Food Trays" style="width: 14.285%; height: 100%; object-fit: cover; flex-shrink: 0;">
+                <img src="sf4.jpg" alt="Party Food Trays" style="width: 14.285%; height: 100%; object-fit: cover; flex-shrink: 0;">
+                <img src="sf5.jpg" alt="Party Food Trays" style="width: 14.285%; height: 100%; object-fit: cover; flex-shrink: 0;">
+                <img src="sf6.jpg" alt="Party Food Trays" style="width: 14.285%; height: 100%; object-fit: cover; flex-shrink: 0;">
+            </div>
 
-        <div class="absolute bottom-6 left-1/2 md:left-1/4 transform -translate-x-1/2 bg-brand-dark border-2 border-brand-yellow rounded-[2rem] rounded-tr-none px-6 py-4 shadow-2xl flex flex-col items-center justify-center text-center z-10">
-            <svg class="w-9 h-9 text-brand-yellow mb-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
-            <p class="text-[0.6rem] text-white uppercase tracking-widest leading-none mt-1">Good For</p>
-            <p class="text-3xl font-extrabold text-white leading-none my-1">10-12</p>
-            <p class="text-xs text-brand-yellow font-semibold uppercase">Pax / Tray</p>
+            <div class="absolute bottom-6 left-1/2 md:left-1/4 transform -translate-x-1/2 bg-brand-dark border-2 border-brand-yellow rounded-[2rem] rounded-tr-none px-6 py-4 shadow-2xl flex flex-col items-center justify-center text-center z-10">
+                <svg class="w-9 h-9 text-brand-yellow mb-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                <p class="text-[0.6rem] text-white uppercase tracking-widest leading-none mt-1">Good For</p>
+                <p class="text-3xl font-extrabold text-white leading-none my-1">10-12</p>
+                <p class="text-xs text-brand-yellow font-semibold uppercase">Pax / Tray</p>
+            </div>
+            
+            <div class="absolute inset-0 bg-brand-dark/25 pointer-events-none"></div>
         </div>
-        
-        <div class="absolute inset-0 bg-brand-dark/25 pointer-events-none"></div>
     </div>
-</div>
 </section>
 
 <!-- ===== FEATURES BAR ===== -->
@@ -281,109 +282,88 @@
         </div>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
 
-            <!-- PORK -->
             <div class="pkg-card">
-                <div class="flex items-baseline justify-between mb-3">
-                    <h3 class="text-white font-extrabold text-base uppercase tracking-wide">Pork</h3>
-                    <span class="price-badge">999 PHP</span>
-                </div>
-                <div class="menu-item">Kare Kare Bagnet***</div>
-                <div class="menu-item">Pork Spareribs Caldereta***</div>
-                <div class="menu-item">Pork and Mushroom***</div>
-                <div class="menu-item">Honey Garlic Pork</div>
-                <div class="menu-item">Pork Menudo</div>
-                <div class="menu-item">Crispy Liempo Dinakdakan</div>
-                <div class="menu-item">Crispy Liempo Sisig</div>
-                <div class="menu-item">Lumpia Shanghai 799 (90–100 pcs)</div>
-            </div>
+    <div class="flex items-baseline justify-between mb-3">
+        <h3 class="text-white font-extrabold text-base uppercase tracking-wide">Pork</h3>
+        <span class="price-badge" id="pork-price">999 PHP</span>
+    </div>
+    <div id="pork-items-container" class="space-y-1">
+        <p class="text-gray-500 text-xs italic">Loading dishes...</p>
+    </div>
+</div>
 
-            <!-- BEEF -->
-            <div class="pkg-card">
-                <div class="flex items-baseline justify-between mb-3">
-                    <h3 class="text-white font-extrabold text-base uppercase tracking-wide">Beef</h3>
-                    <span class="price-badge">1,099 PHP</span>
-                </div>
-                <div class="menu-item">Roast Beef***</div>
-                <div class="menu-item">Beef and Mushroom***</div>
-                <div class="menu-item">Beef Broccoli***</div>
-                <div class="menu-item">Beef Salpicao</div>
-                <div class="menu-item">Beef Sirloin Caldereta</div>
-            </div>
+<div class="pkg-card">
+    <div class="flex items-baseline justify-between mb-3">
+        <h3 class="text-white font-extrabold text-base uppercase tracking-wide">Beef</h3>
+        <span class="price-badge" id="beef-price">1,099 PHP</span>
+    </div>
+    <div id="beef-items-container" class="space-y-1">
+        <p class="text-gray-500 text-xs italic">Loading dishes...</p>
+    </div>
+</div>
 
-            <!-- CHICKEN -->
-            <div class="pkg-card">
-                <div class="flex items-baseline justify-between mb-3">
-                    <h3 class="text-white font-extrabold text-base uppercase tracking-wide">Chicken</h3>
-                    <span class="price-badge">999 PHP</span>
-                </div>
-                <div class="menu-item">Chicken Cordon Bleu***</div>
-                <div class="menu-item">Chicken Teriyaki***</div>
-                <div class="menu-item">Buffalo Wings***</div>
-                <div class="menu-item">Chicken Afritada</div>
-                <div class="menu-item">Chicken Pastel</div>
-                <div class="menu-item">Buttered Chicken</div>
-                <div class="menu-item">Fried Chicken w/ Gravy</div>
-            </div>
+<div class="pkg-card">
+    <div class="flex items-baseline justify-between mb-3">
+        <h3 class="text-white font-extrabold text-base uppercase tracking-wide">Chicken</h3>
+        <span class="price-badge" id="chicken-price">999 PHP</span>
+    </div>
+    <div id="chicken-items-container" class="space-y-1">
+        <p class="text-gray-500 text-xs italic">Loading dishes...</p>
+    </div>
+</div>
 
-            <!-- VEGETABLES -->
-            <div class="pkg-card">
-                <div class="flex items-baseline justify-between mb-3">
-                    <h3 class="text-white font-extrabold text-base uppercase tracking-wide">Vegetables</h3>
-                    <span class="price-badge">799 PHP</span>
-                </div>
-                <div class="menu-item">Tofu Sisig***</div>
-                <div class="menu-item">Spicy Bagnet Laing***</div>
-                <div class="menu-item">Chapsuey Special</div>
-                <div class="menu-item">Sipo Egg</div>
-            </div>
+<div class="pkg-card">
+    <div class="flex items-baseline justify-between mb-3">
+        <h3 class="text-white font-extrabold text-base uppercase tracking-wide">Vegetables</h3>
+        <span class="price-badge" id="vegetables-price">799 PHP</span>
+    </div>
+    <div id="vegetables-items-container" class="space-y-1">
+        <p class="text-gray-500 text-xs italic">Loading dishes...</p>
+    </div>
+</div>
 
-            <!-- FISH -->
-            <div class="pkg-card">
-                <div class="flex items-baseline justify-between mb-3">
-                    <h3 class="text-white font-extrabold text-base uppercase tracking-wide">Fish</h3>
-                    <span class="price-badge">899 PHP</span>
-                </div>
-                <div class="menu-item">Lemon Herb Fish Fillet***</div>
-                <div class="menu-item">Fish Fillet w/ Tartar Sauce***</div>
-                <div class="menu-item">Sweet and Sour Fish</div>
-                <div class="menu-item">Buttered Shrimp – 1,249/Tray</div>
-            </div>
+<div class="pkg-card">
+    <div class="flex items-baseline justify-between mb-3">
+        <h3 class="text-white font-extrabold text-base uppercase tracking-wide">Fish</h3>
+        <span class="price-badge" id="fish-price">899 PHP</span>
+    </div>
+    <div id="fish-items-container" class="space-y-1">
+        <p class="text-gray-500 text-xs italic">Loading dishes...</p>
+    </div>
+</div>
 
-            <!-- PASTA -->
-            <div class="pkg-card">
-                <div class="flex items-baseline justify-between mb-3">
-                    <h3 class="text-white font-extrabold text-base uppercase tracking-wide">Pasta</h3>
-                    <span class="price-badge">799 PHP</span>
-                </div>
-                <p class="text-gray-500 text-[0.68rem] mb-2">Good for 8–10 pax</p>
-                <div class="menu-item">Beef Lasagna*** (899/Tray)</div>
-                <div class="menu-item">Bacon Carbonara***</div>
-                <div class="menu-item">Spaghetti Bolognese</div>
-                <div class="menu-item">Beef Baked Macaroni</div>
-                <div class="menu-item">Chicken Alfredo Fettuccine</div>
-            </div>
+<div class="pkg-card">
+    <div class="flex items-baseline justify-between mb-3">
+        <h3 class="text-white font-extrabold text-base uppercase tracking-wide">Pasta</h3>
+        <span class="price-badge" id="pasta-price">799 PHP</span>
+    </div>
+    <p class="text-gray-500 text-[0.68rem] mb-2">Good for 8–10 pax</p>
+    <div id="pasta-items-container" class="space-y-1">
+        <p class="text-gray-500 text-xs italic">Loading dishes...</p>
+    </div>
+</div>
 
-            <!-- NOODLES -->
-            <div class="pkg-card">
-                <div class="flex items-baseline justify-between mb-3">
-                    <h3 class="text-white font-extrabold text-base uppercase tracking-wide">Noodles</h3>
-                    <span class="price-badge">699 PHP</span>
-                </div>
-                <p class="text-gray-500 text-[0.68rem] mb-2">Good for 14–16 pax</p>
-                <div class="menu-item">Bihon Con Lechon</div>
-                <div class="menu-item">Canton Con Lechon</div>
-            </div>
+<div class="pkg-card">
+    <div class="flex items-baseline justify-between mb-3">
+        <h3 class="text-white font-extrabold text-base uppercase tracking-wide">Noodles</h3>
+        <span class="price-badge" id="noodles-price">699 PHP</span>
+    </div>
+    <p class="text-gray-500 text-[0.68rem] mb-2">Good for 14–16 pax</p>
+    <div id="noodles-items-container" class="space-y-1">
+        <p class="text-gray-500 text-xs italic">Loading dishes...</p>
+    </div>
+</div>
 
-            <!-- DESSERT -->
-            <div class="pkg-card">
-                <div class="flex items-baseline justify-between mb-3">
-                    <h3 class="text-white font-extrabold text-base uppercase tracking-wide">Dessert</h3>
-                    <span class="price-badge">699 PHP</span>
-                </div>
-                <p class="text-gray-500 text-[0.68rem] mb-2">Good for 18–20 pax</p>
-                <div class="menu-item">Mango Tapioca***</div>
-                <div class="menu-item">Coffee Jelly</div>
-            </div>
+<div class="pkg-card">
+    <div class="flex items-baseline justify-between mb-3">
+        <h3 class="text-white font-extrabold text-base uppercase tracking-wide">Dessert</h3>
+        <span class="price-badge" id="dessert-price">699 PHP</span>
+    </div>
+    <p class="text-gray-500 text-[0.68rem] mb-2">Good for 18–20 pax</p>
+    <div id="dessert-items-container" class="space-y-1">
+        <p class="text-gray-500 text-xs italic">Loading dishes...</p>
+    </div>
+</div>
 
         </div>
     </div>
@@ -567,31 +547,31 @@
 
 <!-- ===== REVIEW ===== -->
 <div id="reviews-section" class="py-16 bg-brand-dark/50 px-6 sm:px-12 lg:px-20">
-        <div class="max-w-6xl mx-auto text-center mb-12">
-            <h2 class="text-3xl font-extrabold text-white uppercase tracking-tight">Ano ang Sabi ng mga kaSimpleFoods natin?</h2>
-            <p class="text-brand-yellow font-semibold uppercase tracking-wider text-sm mt-2">Real Reviews from Real Customers</p>
+    <div class="max-w-6xl mx-auto text-center mb-12">
+        <h2 class="text-3xl font-extrabold text-white uppercase tracking-tight">Ano ang Sabi ng mga kaSimpleFoods natin?</h2>
+        <p class="text-brand-yellow font-semibold uppercase tracking-wider text-sm mt-2">Real Reviews from Real Customers</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+        <div class="bg-[#153940] p-6 rounded-2xl border border-brand-teal/20 shadow-lg">
+            <div class="text-brand-yellow mb-3">⭐⭐⭐⭐•</div>
+            <p class="text-gray-200 text-sm italic mb-4">"Sobrang siksik ng Party Trays nila! Hindi tinipid sahog at napakabait pa ng seller. Selyado ang pagkaka-deliver."</p>
+            <div class="font-bold text-white text-sm">- Maria D., Quezon City</div>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
-            <div class="bg-[#153940] p-6 rounded-2xl border border-brand-teal/20 shadow-lg">
-                <div class="text-brand-yellow mb-3">⭐⭐⭐⭐⭐</div>
-                <p class="text-gray-200 text-sm italic mb-4">"Sobrang siksik ng Party Trays nila! Hindi tinipid sahog at napakabait pa ng seller. Selyado ang pagkaka-deliver."</p>
-                <div class="font-bold text-white text-sm">- Maria D., Quezon City</div>
-            </div>
+        <div class="bg-[#153940] p-6 rounded-2xl border border-brand-teal/20 shadow-lg">
+            <div class="text-brand-yellow mb-3">⭐⭐⭐⭐•</div>
+            <p class="text-gray-200 text-sm italic mb-4">"Perfect para sa mga crew meals namin sa opisina. On-time palagi mag-deliver at may Official Receipt pa kaya madaling i-liquidate!"</p>
+            <div class="font-bold text-white text-sm">- Tech Corp Inc. (HR Manager)</div>
+        </div>
 
-            <div class="bg-[#153940] p-6 rounded-2xl border border-brand-teal/20 shadow-lg">
-                <div class="text-brand-yellow mb-3">⭐⭐⭐⭐⭐</div>
-                <p class="text-gray-200 text-sm italic mb-4">"Perfect para sa mga crew meals namin sa opisina. On-time palagi mag-deliver at may Official Receipt pa kaya madaling i-liquidate!"</p>
-                <div class="font-bold text-white text-sm">- Tech Corp Inc. (HR Manager)</div>
-            </div>
-
-            <div class="bg-[#153940] p-6 rounded-2xl border border-brand-teal/20 shadow-lg">
-                <div class="text-brand-yellow mb-3">⭐⭐⭐⭐⭐</div>
-                <p class="text-gray-200 text-sm italic mb-4">"Deliciously simple nga talaga! Yung coffee jelly at lasagna nila ang paborito ng pamilya namin tuwing may okasyon."</p>
-                <div class="font-bold text-white text-sm">- Juan R., Cainta</div>
-            </div>
+        <div class="bg-[#153940] p-6 rounded-2xl border border-brand-teal/20 shadow-lg">
+            <div class="text-brand-yellow mb-3">⭐⭐⭐⭐•</div>
+            <p class="text-gray-200 text-sm italic mb-4">"Deliciously simple nga talaga! Yung coffee jelly at lasagna nila ang paborito ng pamilya namin tuwing may okasyon."</p>
+            <div class="font-bold text-white text-sm">- Juan R., Cainta</div>
         </div>
     </div>
+</div>
 
 <!-- ===== ABOUT US ===== -->
 <section id="about" class="py-16 md:py-20 bg-brand-light">
@@ -681,24 +661,72 @@
     </div>
 </footer>
 
-    <script>
-    // Kinukuha lahat ng links sa loob ng mobile menu at inuutusang mag-close kapag pinindot
+<script>
     document.querySelectorAll('#mobile-menu a').forEach(link => {
         link.addEventListener('click', () => {
             document.getElementById('mobile-menu').classList.remove('open');
         });
     });
-    </script>
-    <script>
-  if (window.netlifyIdentity) {
-    window.netlifyIdentity.on("init", user => {
-      if (!user) {
-        window.netlifyIdentity.on("login", () => {
-          document.location.href = "/admin/";
-        });
-      }
-    });
-  }
 </script>
+<script>
+    if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", user => {
+            if (!user) {
+                window.netlifyIdentity.on("login", () => {
+                    document.location.href = "/admin/";
+                });
+            }
+        });
+    }
+</script>
+
+<script>
+    async function loadCategoryMenu(categoryName) {
+        try {
+            // Gumagamit tayo ng relative path para gumana sa Local at Netlify live site
+            const response = await fetch(`/SimpleFoods/data/menu/${categoryName}.json`);
+            if (!response.ok) return; // Kung wala pang file, mananatili lang yung default HTML
+            
+            const data = await response.json();
+
+            const priceBadge = document.getElementById(`${categoryName}-price`);
+            if (priceBadge && data.price) {
+                priceBadge.innerText = data.price;
+            }
+
+            const container = document.getElementById(`${categoryName}-items-container`);
+            if (container) {
+                container.innerHTML = ''; 
+
+                if (data.items && data.items.length > 0) {
+                    data.items.forEach(dish => {
+                        const div = document.createElement('div');
+                        div.className = 'menu-item';
+                        const star = dish.bestseller ? '***' : '';
+                        div.innerText = `${dish.name}${star}`;
+                        container.appendChild(div);
+                    });
+                } else {
+                    container.innerHTML = '<p class="text-gray-500 text-xs italic">No dishes found.</p>';
+                }
+            }
+        } catch (error) {
+            console.error(`Error loading ${categoryName}:`, error);
+        }
+    }
+
+    window.addEventListener('DOMContentLoaded', () => {
+        // Isa-isang uutusan ang JS na hanapin ang bawat file ng kategorya
+        loadCategoryMenu('pork');
+        loadCategoryMenu('beef');
+        loadCategoryMenu('chicken');
+        loadCategoryMenu('vegetables');
+        loadCategoryMenu('fish');
+        loadCategoryMenu('pasta');
+        loadCategoryMenu('noodles');
+        loadCategoryMenu('dessert');
+    });
+</script>
+
 </body>
 </html>
