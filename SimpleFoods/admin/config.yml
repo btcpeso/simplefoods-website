@@ -115,3 +115,36 @@ collections:
             fields:
               - { label: "Dish Name", name: "name", widget: "string" }
               - { label: "Is Best Seller? (***)", name: "bestseller", widget: "boolean", default: false }
+
+      # --- CREW PACKAGES ---
+      - file: "SimpleFoods/data/menu/crew_packages.json"
+        label: "Crew Packages Setup"
+        name: "crew_packages"
+        fields:
+          - label: "Packages List"
+            name: "packages"
+            widget: "list"
+            fields:
+              - { label: "Package Name", name: "name", widget: "string" }
+              - { label: "Price Label", name: "price", widget: "string" }
+              - { label: "Is Best Seller?", name: "bestseller", widget: "boolean", default: false }
+              - { label: "Inclusions (Line by line)", name: "inclusions", widget: "list", field: { widget: "string" } }
+
+      # --- CREW SIDES & ENTREES ---
+      - file: "SimpleFoods/data/menu/crew_sides.json"
+        label: "Crew Entrées & Sides"
+        name: "crew_sides"
+        fields:
+          - label: "Menu Categories"
+            name: "categories"
+            widget: "list"
+            fields:
+              - { label: "Category Title", name: "title", widget: "string" }
+              - { label: "Extra Badge Text (e.g., +10 PHP)", name: "extra", widget: "string", required: false }
+              - { label: "Is Special Upgrade Card Styling?", name: "isUpgrade", widget: "boolean", default: false }
+              - label: "Items List"
+                name: "items"
+                widget: "list"
+                fields:
+                  - { label: "Dish Name", name: "name", widget: "string" }
+                  - { label: "Is Best Seller? (***)", name: "bestseller", widget: "boolean", default: false }        

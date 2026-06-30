@@ -278,7 +278,7 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-12">
             <h2 class="text-3xl font-extrabold text-white uppercase tracking-wide heading-lines">PARTY FOOD TRAYS</h2>
-            <p class="text-gray-400 mt-3 text-sm font-medium">Good for 10–12 pax / tray &nbsp;|&nbsp; *** = Best Sellers</p>
+            <p class="text-gray-400 text-sm">Good for 10–12 pax / tray | <span class="text-amber-400 font-bold">***</span> = Best Sellers</p>
         </div>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
 
@@ -374,172 +374,22 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-4">
             <h2 class="text-3xl font-extrabold text-white uppercase tracking-wide heading-lines">CREW MEALS</h2>
-            <p class="text-brand-yellow mt-3 text-xs font-semibold tracking-widest uppercase">*** Minimum 20 pcs to order per package ***</p>
+            <p class="text-brand-yellow mt-3 text-xs font-semibold tracking-widest uppercase"><span class="text-amber-400 font-bold">***</span> Minimum 20 pcs to order per package <span class="text-amber-400 font-bold">***</span></p>
         </div>
 
-        <!-- PACKAGES -->
+        <!-- PACKAGES (DYNAMIC) -->
         <div class="mb-10">
             <h3 class="text-center text-white font-bold text-sm tracking-widest uppercase mb-4">Best Sellers & Packages</h3>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
-                <!-- Package A -->
-                <div class="border-2 border-brand-yellow rounded-xl p-4" style="background:#051e28;">
-                    <div class="flex items-baseline justify-between mb-1">
-                        <p class="text-white font-bold text-sm">Package A</p>
-                        <span class="price-badge">169 PHP</span>
-                    </div>
-                    <p class="text-brand-yellow text-[0.65rem] font-semibold mb-2 uppercase tracking-wide">Best Seller</p>
-                    <ul class="space-y-1">
-                        <li class="menu-item">1 Entrée</li>
-                        <li class="menu-item">Steamed Rice</li>
-                        <li class="menu-item">Veg or Pasta or Pancit</li>
-                        <li class="menu-item">Dessert Bars</li>
-                        <li class="menu-item">Bottled Water 350ml</li>
-                        <li class="menu-item">Sealed Utensils</li>
-                    </ul>
-                </div>
-                <!-- Breakfast Package -->
-                <div class="border border-brand-yellow/40 rounded-xl p-4" style="background:#051e28;">
-                    <div class="flex items-baseline justify-between mb-3">
-                        <p class="text-white font-bold text-sm">Breakfast Package</p>
-                        <span class="price-badge">125 PHP</span>
-                    </div>
-                    <ul class="space-y-1">
-                        <li class="menu-item">All Day Silog</li>
-                        <li class="menu-item">Dessert Bars</li>
-                        <li class="menu-item">Bottled Water 350ml</li>
-                        <li class="menu-item">Sealed Utensils</li>
-                    </ul>
-                </div>
-                <!-- Package B -->
-                <div class="border border-brand-yellow/40 rounded-xl p-4" style="background:#051e28;">
-                    <div class="flex items-baseline justify-between mb-3">
-                        <p class="text-white font-bold text-sm">Package B</p>
-                        <span class="price-badge">185 PHP</span>
-                    </div>
-                    <ul class="space-y-1">
-                        <li class="menu-item">2 Entrées</li>
-                        <li class="menu-item">Steamed Rice</li>
-                        <li class="menu-item">Dessert Bars</li>
-                        <li class="menu-item">Bottled Water 350ml</li>
-                        <li class="menu-item">Sealed Utensils</li>
-                    </ul>
-                </div>
-                <!-- Package C -->
-                <div class="border border-brand-yellow/40 rounded-xl p-4" style="background:#051e28;">
-                    <div class="flex items-baseline justify-between mb-3">
-                        <p class="text-white font-bold text-sm">Package C</p>
-                        <span class="price-badge">135 PHP</span>
-                    </div>
-                    <ul class="space-y-1">
-                        <li class="menu-item">1 Entrée</li>
-                        <li class="menu-item">Steamed Rice</li>
-                        <li class="menu-item">Dessert Bars</li>
-                        <li class="menu-item">Bottled Water 350ml</li>
-                        <li class="menu-item">Sealed Utensils</li>
-                    </ul>
-                </div>
-                <!-- Package D -->
-                <div class="border border-brand-yellow/40 rounded-xl p-4" style="background:#051e28;">
-                    <div class="flex items-baseline justify-between mb-3">
-                        <p class="text-white font-bold text-sm">Package D</p>
-                        <span class="price-badge">245 PHP</span>
-                    </div>
-                    <ul class="space-y-1">
-                        <li class="menu-item">2 Entrées</li>
-                        <li class="menu-item">Steamed Rice</li>
-                        <li class="menu-item">Veg or Pasta or Pancit</li>
-                        <li class="menu-item">Dessert Bars</li>
-                        <li class="menu-item">Bottled Water 350ml</li>
-                        <li class="menu-item">Sealed Utensils</li>
-                    </ul>
-                </div>
+            <div id="crew-packages-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+                <p class="text-gray-500 text-xs italic col-span-full text-center">Loading packages...</p>
             </div>
         </div>
 
-        <!-- ENTREES & SIDES -->
+        <!-- ENTREES & SIDES (DYNAMIC) -->
         <div>
             <h3 class="text-center text-white font-bold text-sm tracking-widest uppercase mb-4">Entrées & Side Dishes</h3>
-            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
-                <!-- Pork -->
-                <div style="border:1px solid rgba(255,255,255,0.12);background:#051e28;border-radius:10px;padding:0.875rem;">
-                    <h4 class="text-brand-yellow font-bold text-xs uppercase tracking-wide mb-2">Pork</h4>
-                    <div class="menu-item">Pork Spareribs Caldereta***</div>
-                    <div class="menu-item">Pork Menudo***</div>
-                    <div class="menu-item">Kare Kare Bagnet***</div>
-                    <div class="menu-item">Pork Tonkatsu</div>
-                    <div class="menu-item">Pork Salpicao</div>
-                    <div class="menu-item">Pork Adobo</div>
-                    <div class="menu-item">Pork Steak</div>
-                    <div class="menu-item">Pork and Mushroom</div>
-                    <div class="menu-item">Pork Sisig</div>
-                </div>
-                <!-- Beef -->
-                <div style="border:1px solid rgba(255,255,255,0.12);background:#051e28;border-radius:10px;padding:0.875rem;">
-                    <h4 class="text-brand-yellow font-bold text-xs uppercase tracking-wide mb-2">Beef <span class="text-gray-400 font-normal normal-case">(+10 PHP)</span></h4>
-                    <div class="menu-item">Roast Beef***</div>
-                    <div class="menu-item">Beef and Mushroom***</div>
-                    <div class="menu-item">Beef Caldereta</div>
-                    <div class="menu-item">Beef Salpicao</div>
-                </div>
-                <!-- Chicken -->
-                <div style="border:1px solid rgba(255,255,255,0.12);background:#051e28;border-radius:10px;padding:0.875rem;">
-                    <h4 class="text-brand-yellow font-bold text-xs uppercase tracking-wide mb-2">Chicken</h4>
-                    <div class="menu-item">Buttered Chicken***</div>
-                    <div class="menu-item">Chicken Teriyaki***</div>
-                    <div class="menu-item">Buffalo Wings***</div>
-                    <div class="menu-item">Chicken Cordon Bleu</div>
-                    <div class="menu-item">Chicken Caldereta</div>
-                    <div class="menu-item">Chicken Adobo</div>
-                    <div class="menu-item">Chicken Curry</div>
-                    <div class="menu-item">Chicken Pastel</div>
-                    <div class="menu-item">Chicken Afritada</div>
-                </div>
-                <!-- Fish -->
-                <div style="border:1px solid rgba(255,255,255,0.12);background:#051e28;border-radius:10px;padding:0.875rem;">
-                    <h4 class="text-brand-yellow font-bold text-xs uppercase tracking-wide mb-2">Fish</h4>
-                    <div class="menu-item">Fish Fillet w/ Tartar Dip***</div>
-                    <div class="menu-item">Sweet &amp; Sour Fish Fillet***</div>
-                    <div class="menu-item">Fish Fillet w/ Bechamel Sauce</div>
-                </div>
-                <!-- Vegetables -->
-                <div style="border:1px solid rgba(255,255,255,0.12);background:#051e28;border-radius:10px;padding:0.875rem;">
-                    <h4 class="text-brand-yellow font-bold text-xs uppercase tracking-wide mb-2">Vegetables</h4>
-                    <div class="menu-item">Tofu Sisig***</div>
-                    <div class="menu-item">Chapsuey Chicken***</div>
-                    <div class="menu-item">Stir Fry Vegetable w/ Tofu</div>
-                    <div class="menu-item">Sayote Con Carne</div>
-                </div>
-                <!-- Pasta -->
-                <div style="border:1px solid rgba(255,255,255,0.12);background:#051e28;border-radius:10px;padding:0.875rem;">
-                    <h4 class="text-brand-yellow font-bold text-xs uppercase tracking-wide mb-2">Pasta</h4>
-                    <div class="menu-item">Spaghetti Bolognese***</div>
-                    <div class="menu-item">Baked Macaroni***</div>
-                    <div class="menu-item">Bacon Carbonara</div>
-                    <div class="menu-item">Chicken Alfredo</div>
-                </div>
-                <!-- Pancit -->
-                <div style="border:1px solid rgba(255,255,255,0.12);background:#051e28;border-radius:10px;padding:0.875rem;">
-                    <h4 class="text-brand-yellow font-bold text-xs uppercase tracking-wide mb-2">Pancit</h4>
-                    <div class="menu-item">Pancit Bihon Con Lechon</div>
-                    <div class="menu-item">Pancit Canton Con Lechon</div>
-                </div>
-                <!-- All Day Silog -->
-                <div style="border:1px solid rgba(255,255,255,0.12);background:#051e28;border-radius:10px;padding:0.875rem;">
-                    <h4 class="text-brand-yellow font-bold text-xs uppercase tracking-wide mb-2">All Day Silog</h4>
-                    <div class="menu-item">Hungarian Silog***</div>
-                    <div class="menu-item">Beef Sirloin Tapsilog*** (135 PHP)</div>
-                    <div class="menu-item">Chicken Silog (135 PHP)</div>
-                    <div class="menu-item">Garlic Longganisa Silog</div>
-                    <div class="menu-item">Home Made Tocino Silog</div>
-                </div>
-                <!-- Special Upgrades -->
-                <div style="border:1px solid rgba(251,193,22,0.35);background:#051e28;border-radius:10px;padding:0.875rem;">
-                    <h4 class="text-brand-yellow font-bold text-xs uppercase tracking-wide mb-2">Special Upgrades</h4>
-                    <div class="menu-item">Extra Steamed Rice — 20 PHP</div>
-                    <div class="menu-item">Coffee Jelly 100ml — 25 PHP</div>
-                    <div class="menu-item">Mango Tapioca 100ml — 25 PHP</div>
-                    <div class="menu-item">Soft Drinks Mismo Size — 25 PHP</div>
-                </div>
+            <div id="crew-sides-container" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+                <p class="text-gray-500 text-xs italic col-span-full text-center">Loading menu lists...</p>
             </div>
         </div>
     </div>
@@ -684,7 +534,7 @@
     async function loadCategoryMenu(categoryName) {
         try {
             // Gumagamit tayo ng relative path para gumana sa Local at Netlify live site
-            const response = await fetch(`/SimpleFoods/data/menu/${categoryName}.json`);
+            const response = await fetch(`data/menu/${categoryName}.json`);
             if (!response.ok) return; // Kung wala pang file, mananatili lang yung default HTML
             
             const data = await response.json();
@@ -702,8 +552,14 @@
                     data.items.forEach(dish => {
                         const div = document.createElement('div');
                         div.className = 'menu-item';
-                        const star = dish.bestseller ? '***' : '';
-                        div.innerText = `${dish.name}${star}`;
+                        
+                        // Kung bestseller, lalagyan ng dilaw na *** gamit ang span tag
+                        if (dish.bestseller) {
+                            div.innerHTML = `${dish.name}<span class="text-amber-400 font-bold ml-1">***</span>`;
+                        } else {
+                            div.innerText = dish.name;
+                        }
+                        
                         container.appendChild(div);
                     });
                 } else {
@@ -713,6 +569,71 @@
         } catch (error) {
             console.error(`Error loading ${categoryName}:`, error);
         }
+    }
+
+    async function loadCrewPackages() {
+        try {
+            const response = await fetch(`data/menu/crew_packages.json`);
+            if (!response.ok) return;
+            const data = await response.json();
+            const container = document.getElementById('crew-packages-container');
+            if (!container) return;
+            
+            container.innerHTML = '';
+            data.packages.forEach(pkg => {
+                const card = document.createElement('div');
+                // Baguhin ang border style kapag bestseller ang package
+                card.className = pkg.bestseller 
+                    ? "border-2 border-brand-yellow rounded-xl p-4" 
+                    : "border border-brand-yellow/40 rounded-xl p-4";
+                card.style.background = "#051e28";
+
+                let inclusionList = pkg.inclusions.map(inc => `<li class="menu-item">${inc}</li>`).join('');
+                
+                card.innerHTML = `
+                    <div class="flex items-baseline justify-between mb-1">
+                        <p class="text-white font-bold text-sm">${pkg.name}</p>
+                        <span class="price-badge">${pkg.price}</span>
+                    </div>
+                    ${pkg.bestseller ? '<p class="text-brand-yellow text-[0.65rem] font-semibold mb-2 uppercase tracking-wide">Best Seller</p>' : '<div class="mb-3"></div>'}
+                    <ul class="space-y-1">${inclusionList}</ul>
+                `;
+                container.appendChild(card);
+            });
+        } catch (e) { console.error("Error loading crew packages:", e); }
+    }
+
+    async function loadCrewSides() {
+        try {
+            const response = await fetch(`data/menu/crew_sides.json`);
+            if (!response.ok) return;
+            const data = await response.json();
+            const container = document.getElementById('crew-sides-container');
+            if (!container) return;
+
+            container.innerHTML = '';
+            data.categories.forEach(cat => {
+                const card = document.createElement('div');
+                card.style.background = "#051e28";
+                card.style.borderRadius = "10px";
+                card.style.padding = "0.875rem";
+                card.style.border = cat.isUpgrade 
+                    ? "1px solid rgba(251,193,22,0.35)" 
+                    : "1px solid rgba(251,255,255,0.12)";
+
+                let extraText = cat.extra ? ` <span class="text-gray-400 font-normal normal-case">${cat.extra}</span>` : '';
+                let itemsHTML = cat.items.map(dish => {
+                    const star = dish.bestseller ? '<span class="text-amber-400 font-bold ml-1">***</span>' : '';
+                    return `<div class="menu-item">${dish.name}${star}</div>`;
+                }).join('');
+
+                card.innerHTML = `
+                    <h4 class="text-brand-yellow font-bold text-xs uppercase tracking-wide mb-2">${cat.title}${extraText}</h4>
+                    ${itemsHTML}
+                `;
+                container.appendChild(card);
+            });
+        } catch (e) { console.error("Error loading crew sides:", e); }
     }
 
     window.addEventListener('DOMContentLoaded', () => {
@@ -725,6 +646,8 @@
         loadCategoryMenu('pasta');
         loadCategoryMenu('noodles');
         loadCategoryMenu('dessert');
+        loadCrewPackages();
+        loadCrewSides();
     });
 </script>
 

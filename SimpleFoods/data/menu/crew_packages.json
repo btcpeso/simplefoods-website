@@ -1,0 +1,34 @@
+{
+  "packages": [
+    {
+      "name": "Package A",
+      "price": "169 PHP",
+      "bestseller": true,
+      "inclusions": ["1 Entrée", "Steamed Rice", "Veg or Pasta or Pancit", "Dessert Bars", "Bottled Water 350ml", "Sealed Utensils"]
+    },
+    {
+      "name": "Breakfast Package",
+      "price": "125 PHP",
+      "bestseller": false,
+      "inclusions": ["All Day Silog", "Dessert Bars", "Bottled Water 350ml", "Sealed Utensils"]
+    },
+    {
+      "name": "Package B",
+      "price": "185 PHP",
+      "bestseller": false,
+      "inclusions": ["2 Entrées", "Steamed Rice", "Dessert Bars", "Bottled Water 350ml", "Sealed Utensils"]
+    },
+    {
+      "name": "Package C",
+      "price": "135 PHP",
+      "bestseller": false,
+      "inclusions": ["1 Entrée", "Steamed Rice", "Dessert Bars", "Bottled Water 350ml", "Sealed Utensils"]
+    },
+    {
+      "name": "Package D",
+      "price": "245 PHP",
+      "bestseller": false,
+      "inclusions": ["2 Entrées", "Steamed Rice", "Veg or Pasta or Pancit", "Dessert Bars", "Bottled Water 350ml", "Sealed Utensils"]
+    }
+  ]
+}
